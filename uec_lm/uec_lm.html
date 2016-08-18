@@ -39,21 +39,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="http://placehold.it/150x50&text=Logo" alt="">
-                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <h1><font color = #f6f6f6>Roseville UEC Logic Model</font></h1>
                     </li>
                 </ul>
             </div>
@@ -67,31 +58,10 @@
         
 
 
-        <!-- Heading Row -->
-<!--
-        <div class="row">
-            <div class="col-md-8">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="">
-            </div>
--->
-            <!-- /.col-md-8 -->
-<!--
-            <div class="col-md-4">
-                <h1>Business Name or Tagline</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
-            </div>
--->
-            <!-- /.col-md-4 -->
-<!--
-        </div>
--->
-        <!-- /.row -->
-
-        <hr>
 
         <!-- Call to Action Well -->
-<!--        <div class="row">
+<!--
+        <div class="row">
             <div class="col-lg-12">
                 <div class="well text-center">
                         <div class="filters text-center">
@@ -106,6 +76,7 @@
             </div>
         </div>
 -->
+
         <!-- /.row -->
 
         <!-- Content Row -->
@@ -114,29 +85,40 @@
             <div class="col-md-2" id="col-relationships">
                 <h2>Relationships</h2>
                 <p>audience, partners, stakeholders</p>
-                <div class="well text-center">Roseville rate payers</div>
-                <a class="btn btn-default" href="#">More Info</a>
+                <div id="kid-card-template" class="well text-center">
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
+                </div>
             </div>
             <!-- /.col-md-4 -->
 
             <div class="col-md-2" id="col-resources">
                 <h2>Resources</h2>
                 <p>UEC's assets</p>
-                <div class="well text-center">Location/space</div>
+                <div id="kid-card-template" class="well text-center">
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
+                </div>
             </div>
             <!-- /.col-md-4 -->
             
             <div class="col-md-2" id="col-activities">
                 <h2>Activities</h2>
                 <p>what UEC does</p>
-                <div class="well text-center">Planet Protectors school programs</div>
+                <div id="kid-card-template" class="well text-center">
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
+                </div>
             </div>
             <!-- /.col-md-4 -->
             
             <div class="col-md-2" id="col-outputs">
                 <h2>Outputs</h2>
                 <p>counting what happens</p>
-                <div class="well text-center">Schools</div>
+                <div id="kid-card-template" class="well text-center">
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
+                </div>
             </div>
             <!-- /.col-md-4 -->
 
@@ -144,7 +126,8 @@
                 <h2>Outcomes</h2>
                 <p>how people change</p>
                 <div id="kid-card-template" class="well text-center">
-                    <div class="text-center">Addy Gong</div>
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
                 </div>
             </div>
 
@@ -152,11 +135,10 @@
             <div class="col-md-2" id="col-impacts">
                 <h2>Impacts</h2>
                 <p>big, audacious goals</p>
-                <div class="well text-center">Amaze with what our utilities do every day</div>
-                <div class="well text-center">Inspire stewardship at home</div>
-                <div class="well text-center">Reflect on the interconnectedness between utility, customer, community, and planet</div>
-                <div class="well text-center">Recognized leader for utility education and interpretation</div>
-                <a class="btn btn-default" href="#">More Info</a>
+                <div id="kid-card-template" class="well">
+                    <div class="element-name"></div>
+                    <div class="kid-name"></div>
+                </div>
             </div>
             <!-- /.col-md-4 -->
         
@@ -188,28 +170,53 @@
     <!-- Initialization of Plugins -->
     <script type="text/javascript" src="js/template.js"></script>
 
-    <script src="js/myTutorial.js"></script>
+    <script src="js/lm_data.js"></script>
 
     <script>
 
-        function render_cards(outcomes){
+        function render_cards(lm_element,col_id){
 
-            $m = $("#col-outcomes");
+            $m = $(col_id);
             $k = $('#kid-card-template');
+//            $s = $('#kid-detail-template')
             
-            for( i in outcomes ){
-                var outcome = outcomes[i];
-            
+            for( i in lm_element ){
+                var single_element = lm_element[i];
                 
                 $new_kid = $k.clone();
-                $(".text-center", $new_kid).html(outcome.outcome_text)
-                $(".text-center", $new_kid).html();
+                $(".element-name", $new_kid).html(single_element.text)
+                $(".kid-name", $new_kid).html(single_element.expanded_text)
                 $new_kid.fadeIn();
                 $m.append($new_kid);
+                
+                $new_kid.click(function(){
+//                    document.location = "eringong.com";
+                    $('.kid-name').toggle("slide");
+                });
 
-                }
+                
+//                $new_kid.click(function(){
+//                    console.log('clicked!')
+//
+////                    $header = $(this);
+////                    //getting the next element
+////                    $content = $header.next();
+////                    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+////                    $content.slideToggle(500, function () {
+////                        //execute this after slideToggle is done
+////                        //change text of header based on visibility of content div
+////                        $header.text(function () {
+////                            //change text based on condition
+////                            return $content.is(":visible") ? "Collapse" : "Expand";
+////                        });
+////                    });
+//
+//                });
+
             }
+        }
 
+        
 
         $(document).ready(function(){
         //     // $('#kid-card-template').hide();
@@ -237,9 +244,12 @@
         // //     document.getElementById("id01").innerHTML = out;
 
 
-            render_cards(outcomes);
-
-
+            render_cards(relationship,"#col-relationships");
+            render_cards(resources,"#col-resources");
+            render_cards(activities,"#col-activities");
+            render_cards(outputs,"#col-outputs");
+            render_cards(outcomes,"#col-outcomes");
+            render_cards(impact,"#col-impacts");
         });
 
     </script>

@@ -66,5 +66,16 @@ footer {
 
 
 .kid-name{
+    padding-top:5px;
+    text-align:left;
+    font-size:9pt;
+}
 
+#kid-detail-template {
+    display: none;
+}
+
+.element-name {
+    text-align: left;
+    font-weight:bold;
 }
