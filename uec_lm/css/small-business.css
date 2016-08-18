@@ -1,0 +1,70 @@
+/*!
+ * Start Bootstrap - Small Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+#carousel{
+    width: 100%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+
+#kid-card-template{
+    display: none;
+}
+
+.kid-card{
+    display: block;
+    position: relative;
+/*    display: inline;*/
+/*    float: left;*/
+    margin: auto;
+
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 18px;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    width: 240px;
+    height: 240px;
+    margin-top:10px;
+    margin-bottom:10px;
+/*    padding:10px;*/
+}
+
+
+.kid-name{
+
+}
