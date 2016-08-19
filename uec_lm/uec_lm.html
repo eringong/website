@@ -40,8 +40,18 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class="detail-view"><p>Detail View</p></div>
-
+        
+        
+        <!-- Sort/Filter buttons -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="detail-view" class="filter-button-text">
+                    <div class="filter-button-text">View Details</div>
+                </div>        
+            </div>
+        </div>
+        
+        <!-- /.row -->
         
         <!-- Call to Action Well -->
 <!--
@@ -161,79 +171,52 @@
         function render_boxes(lm_element,col_id){
 
             $m = $(col_id);
-            $k = $('#element-box-template');
+            $e = $('#element-box-template');
             
             for( i in lm_element ){
                 var single_element = lm_element[i];
                 
-                $new_kid = $k.clone();
-                $(".element-name", $new_kid).html(single_element.text)
+                $new_element = $e.clone();
+                $(".element-name", $new_element).html(single_element.text)
                 if (single_element.expanded_text == 'none') {
-                    $(".element-details", $new_kid).html("")    
+                    $(".element-details", $new_element).html("")    
                 } else {
-                    $(".element-details", $new_kid).html(single_element.expanded_text)    
+                    $(".element-details", $new_element).html(single_element.expanded_text)    
                 }
                 
-                $new_kid.fadeIn();
-                $m.append($new_kid);
+//                if (single_element.filter1 == false) {
+//                    $new_element.addClass("filter-1");    
+//                }
+//                
+//                $new_element.attr("id", "node-div-"+i)
+//                                
+                $new_element.fadeIn();
+                $m.append($new_element);
                 
-                $new_kid.click(function(){
-//                    document.location = "eringong.com";
-//                    $('.kid-name').toggle("slide");
-//                    $(this).closest("div").next('.element-name').toggle();
+                $new_element.click(function(){
                     $('.element-details',this).toggle("slide");
                 });
-
                 
-//                $new_kid.click(function(){
-//                    console.log('clicked!')
-//
-////                    $header = $(this);
-////                    //getting the next element
-////                    $content = $header.next();
-////                    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-////                    $content.slideToggle(500, function () {
-////                        //execute this after slideToggle is done
-////                        //change text of header based on visibility of content div
-////                        $header.text(function () {
-////                            //change text based on condition
-////                            return $content.is(":visible") ? "Collapse" : "Expand";
-////                        });
-////                    });
-//
-//                });
-
+                
             }
         }
 
         
 
         $(document).ready(function(){
-        //     // $('#kid-card-template').hide();
-        //     // $('#question_box').hide();
+              $('.element-details').hide();
+
+            $("#detail-view").click(function(){
+                $('.element-details').toggle("slide"); 
+                $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
+            });
+
+//            $("#detail-view").click(function(){
+//                $('.filter-1').toggle("slide");
+//                console.log('clicked');
+//            });
             
-        //     // $("#check_mode_done_btn").click(function(){exit_check_mode()});
-        //     // $("#see_kids_btn").click(function(){
-        //     //     $(".kid-card:not(.checked,#kid-card-template)").slideToggle();
-        //     // });
-
-        //     // fb = new Firebase('https://primary-swiper-5d167.firebaseio.com/')
-        // //                fb.on("value", handle_fb_data);
-
-
-        //     //Might want to add handlers for updates.
             
-        //     // fb.once('value', handle_fb_data);
-
-
-        // //     var out = "";
-        // //     var i;
-        // //     for(i = 0; i<arr.length; i++) {
-        // //         out += arr[i].name + '<br>';
-        // //     }
-        // //     document.getElementById("id01").innerHTML = out;
-
-
             render_boxes(relationship,"#col-relationships");
             render_boxes(resources,"#col-resources");
             render_boxes(activities,"#col-activities");
