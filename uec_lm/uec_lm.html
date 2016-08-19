@@ -31,34 +31,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <h1><font color = #f6f6f6>Roseville UEC Logic Model</font></h1>
-                    </li>
-                </ul>
+                <h1><font color = #f5f5f5>Roseville UEC Logic Model</font></h1>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
     <!-- Page Content -->
     <div class="container">
+        <div class="detail-view"><p>Detail View</p></div>
+
         
-
-
-
         <!-- Call to Action Well -->
 <!--
         <div class="row">
@@ -84,30 +68,30 @@
             
             <div class="col-md-2" id="col-relationships">
                 <h2>Relationships</h2>
-                <p>audience, partners, stakeholders</p>
-                <div id="kid-card-template" class="well text-center">
+                <p>audience, partners</p>
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
 
             <div class="col-md-2" id="col-resources">
                 <h2>Resources</h2>
-                <p>UEC's assets</p>
-                <div id="kid-card-template" class="well text-center">
+                <p>assets</p>
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
             
             <div class="col-md-2" id="col-activities">
                 <h2>Activities</h2>
-                <p>what UEC does</p>
-                <div id="kid-card-template" class="well text-center">
+                <p>what we do</p>
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
@@ -115,9 +99,9 @@
             <div class="col-md-2" id="col-outputs">
                 <h2>Outputs</h2>
                 <p>counting what happens</p>
-                <div id="kid-card-template" class="well text-center">
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
@@ -125,9 +109,9 @@
             <div class="col-md-2" id="col-outcomes">
                 <h2>Outcomes</h2>
                 <p>how people change</p>
-                <div id="kid-card-template" class="well text-center">
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
 
@@ -135,9 +119,9 @@
             <div class="col-md-2" id="col-impacts">
                 <h2>Impacts</h2>
                 <p>big, audacious goals</p>
-                <div id="kid-card-template" class="well">
+                <div id="element-box-template" class="well">
                     <div class="element-name"></div>
-                    <div class="kid-name"></div>
+                    <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
@@ -174,24 +158,30 @@
 
     <script>
 
-        function render_cards(lm_element,col_id){
+        function render_boxes(lm_element,col_id){
 
             $m = $(col_id);
-            $k = $('#kid-card-template');
-//            $s = $('#kid-detail-template')
+            $k = $('#element-box-template');
             
             for( i in lm_element ){
                 var single_element = lm_element[i];
                 
                 $new_kid = $k.clone();
                 $(".element-name", $new_kid).html(single_element.text)
-                $(".kid-name", $new_kid).html(single_element.expanded_text)
+                if (single_element.expanded_text == 'none') {
+                    $(".element-details", $new_kid).html("")    
+                } else {
+                    $(".element-details", $new_kid).html(single_element.expanded_text)    
+                }
+                
                 $new_kid.fadeIn();
                 $m.append($new_kid);
                 
                 $new_kid.click(function(){
 //                    document.location = "eringong.com";
-                    $('.kid-name').toggle("slide");
+//                    $('.kid-name').toggle("slide");
+//                    $(this).closest("div").next('.element-name').toggle();
+                    $('.element-details',this).toggle("slide");
                 });
 
                 
@@ -244,12 +234,12 @@
         // //     document.getElementById("id01").innerHTML = out;
 
 
-            render_cards(relationship,"#col-relationships");
-            render_cards(resources,"#col-resources");
-            render_cards(activities,"#col-activities");
-            render_cards(outputs,"#col-outputs");
-            render_cards(outcomes,"#col-outcomes");
-            render_cards(impact,"#col-impacts");
+            render_boxes(relationship,"#col-relationships");
+            render_boxes(resources,"#col-resources");
+            render_boxes(activities,"#col-activities");
+            render_boxes(outputs,"#col-outputs");
+            render_boxes(outcomes,"#col-outcomes");
+            render_boxes(impact,"#col-impacts");
         });
 
     </script>

@@ -30,52 +30,34 @@ footer {
     }
 }
 
-#carousel{
-    width: 100%;
-    margin: auto;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    text-align: center;
-}
-
-
-#kid-card-template{
+#element-box-template{
     display: none;
-}
-
-.kid-card{
-    display: block;
-    position: relative;
-/*    display: inline;*/
-/*    float: left;*/
-    margin: auto;
-
-    border: 1px solid black;
-    background-color: #fff;
-    border-radius: 18px;
-
-    cursor: pointer;
-    transition: all .3s;
-
-    width: 240px;
-    height: 240px;
-    margin-top:10px;
-    margin-bottom:10px;
-/*    padding:10px;*/
-}
-
-
-.kid-name{
-    padding-top:5px;
-    text-align:left;
-    font-size:9pt;
-}
-
-#kid-detail-template {
-    display: none;
+    cursor:pointer;
+    padding:10px;
 }
 
 .element-name {
     text-align: left;
     font-weight:bold;
+}
+
+.element-details{
+    padding-top:5px;
+    text-align:left;
+    font-size:9pt;
+}
+
+#detail-view{
+    height: 20px;
+    width: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);    
+}
+
+#compact-view{
+    
 }
