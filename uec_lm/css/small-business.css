@@ -36,6 +36,9 @@ footer {
     padding:10px;
 }
 
+.clickable{
+    cursor:pointer;
+}
 .element-name {
     text-align: left;
     font-weight:bold;

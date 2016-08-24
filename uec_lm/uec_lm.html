@@ -126,6 +126,7 @@
             </div>
 
             <!-- /.col-md-4 -->
+<!--
             <div class="col-md-2" id="col-impacts">
                 <h2>Impacts</h2>
                 <p>big, audacious goals</p>
@@ -134,6 +135,7 @@
                     <div class="element-details"></div>
                 </div>
             </div>
+-->
             <!-- /.col-md-4 -->
         
         
@@ -166,6 +168,8 @@
 
     <script src="js/lm_data.js"></script>
 
+    <script src="js/node_lists.js"></script>
+
     <script>
 
         function render_boxes(lm_element,col_id){
@@ -184,12 +188,9 @@
                     $(".element-details", $new_element).html(single_element.expanded_text)    
                 }
                 
-//                if (single_element.filter1 == false) {
-//                    $new_element.addClass("filter-1");    
-//                }
-//                
-//                $new_element.attr("id", "node-div-"+i)
-//                                
+                $new_element.attr("id", "node-div-"+i)
+
+                                
                 $new_element.fadeIn();
                 $m.append($new_element);
                 
@@ -197,32 +198,104 @@
                     $('.element-details',this).toggle("slide");
                 });
                 
-                
             }
         }
 
         
 
         $(document).ready(function(){
-              $('.element-details').hide();
+            $('.element-details').hide();
 
             $("#detail-view").click(function(){
                 $('.element-details').toggle("slide"); 
                 $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
             });
 
-//            $("#detail-view").click(function(){
-//                $('.filter-1').toggle("slide");
-//                console.log('clicked');
-//            });
-            
-            
             render_boxes(relationship,"#col-relationships");
-            render_boxes(resources,"#col-resources");
-            render_boxes(activities,"#col-activities");
-            render_boxes(outputs,"#col-outputs");
-            render_boxes(outcomes,"#col-outcomes");
-            render_boxes(impact,"#col-impacts");
+            render_boxes(resource,"#col-resources");
+            render_boxes(activity,"#col-activities");
+            render_boxes(output,"#col-outputs");
+            render_boxes(outcome,"#col-outcomes");
+//            render_boxes(impact,"#col-impacts");
+            
+            $("#node-div-families").click(function(){
+                for( n in node_list_connect_families ){
+                    $(node_list_connect_families[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-gardeners").click(function(){
+                for( n in node_list_connect_gardeners ){
+                    $(node_list_connect_gardeners[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-teachers").click(function(){
+                for( n in node_list_connect_teachers ){
+                    $(node_list_connect_teachers[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-staff_volunteers").click(function(){
+                for( n in node_list_connect_staff_volunteers ){
+                    $(node_list_connect_staff_volunteers[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-students_chaperones").click(function(){
+                for( n in node_list_connect_students_chaperones ){
+                    $(node_list_connect_students_chaperones[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-businesses").click(function(){
+                for( n in node_list_connect_businesses ){
+                    $(node_list_connect_businesses[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-media").click(function(){
+                for( n in node_list_connect_media ){
+                    $(node_list_connect_media[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-local_govt").click(function(){
+                for( n in node_list_connect_local_govt ){
+                    $(node_list_connect_local_govt[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-utility_depts").click(function(){
+                for( n in node_list_connect_utility_depts ){
+                    $(node_list_connect_utility_depts[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-mahany_partners").click(function(){
+                for( n in node_list_connect_mahany_partners ){
+                    $(node_list_connect_mahany_partners[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-rate_payers").click(function(){
+                for( n in node_list_connect_rate_payers ){
+                    $(node_list_connect_rate_payers[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-adults").click(function(){
+                for( n in node_list_connect_adults ){
+                    $(node_list_connect_adults[n]).toggle("slide");
+                };
+            });
+            
+            $("#node-div-community_orgs").click(function(){
+                for( n in node_list_connect_community_orgs ){
+                    $(node_list_connect_community_orgs[n]).toggle("slide");
+                };
+            });
+            
         });
 
     </script>
