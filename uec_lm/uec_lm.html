@@ -43,11 +43,26 @@
         
         
         <!-- Sort/Filter buttons -->
+<!--
         <div class="row">
             <div class="col-lg-12">
-                <div id="detail-view" class="filter-button-text">
-                    <div class="filter-button-text">View Details</div>
+                <div id="detail-view" class="button-text">
+                    <div class="button-text">View Details</div>
                 </div>        
+            </div>
+        </div>
+-->
+        
+        <div class="row" id="col-relationships">
+            <h2>Relationships</h2>
+            <div class="col-md-4 col-xs-3" id='relationship-button-template'>
+<!--				<div class="image-box">-->
+				    <div class="btn btn-default btn-block">
+                        <div class="element-name"></div>
+                        <div class="element-details"></div>
+                    </div>
+
+<!--				</div>-->
             </div>
         </div>
         
@@ -76,68 +91,35 @@
         <!-- Content Row -->
         <div class="row">
             
-            <div class="col-md-2" id="col-relationships">
-                <h2>Relationships</h2>
-                <p>audience, partners</p>
-                <div id="element-box-template" class="well">
-                    <div class="element-name"></div>
-                    <div class="element-details"></div>
-                </div>
-            </div>
-            <!-- /.col-md-4 -->
-
-            <div class="col-md-2" id="col-resources">
+            <div class="col-md-3 col-xs-3" id="col-resources">
                 <h2>Resources</h2>
                 <p>assets</p>
-                <div id="element-box-template" class="well">
+                <div id="element-box-template" class="well btn button-text">
                     <div class="element-name"></div>
                     <div class="element-details"></div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
             
-            <div class="col-md-2" id="col-activities">
+            <div class="col-md-3 col-xs-3" id="col-activities">
                 <h2>Activities</h2>
                 <p>what we do</p>
-                <div id="element-box-template" class="well">
-                    <div class="element-name"></div>
-                    <div class="element-details"></div>
-                </div>
             </div>
             <!-- /.col-md-4 -->
             
-            <div class="col-md-2" id="col-outputs">
+            <div class="col-md-3 col-xs-3" id="col-outputs">
                 <h2>Outputs</h2>
                 <p>counting what happens</p>
-                <div id="element-box-template" class="well">
-                    <div class="element-name"></div>
-                    <div class="element-details"></div>
-                </div>
             </div>
             <!-- /.col-md-4 -->
 
-            <div class="col-md-2" id="col-outcomes">
+            <div class="col-md-3 col-xs-3" id="col-outcomes">
                 <h2>Outcomes</h2>
                 <p>how people change</p>
-                <div id="element-box-template" class="well">
-                    <div class="element-name"></div>
-                    <div class="element-details"></div>
-                </div>
             </div>
 
             <!-- /.col-md-4 -->
-<!--
-            <div class="col-md-2" id="col-impacts">
-                <h2>Impacts</h2>
-                <p>big, audacious goals</p>
-                <div id="element-box-template" class="well">
-                    <div class="element-name"></div>
-                    <div class="element-details"></div>
-                </div>
-            </div>
--->
-            <!-- /.col-md-4 -->
-        
+        </div>
         
         <!-- /.row -->
 
@@ -147,7 +129,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Erin Gong 2016</p>
                 </div>
             </div>
         </footer>
@@ -164,7 +146,7 @@
     <script src="js/bootstrap.min.js"></script>
     
     <!-- Initialization of Plugins -->
-    <script type="text/javascript" src="js/template.js"></script>
+<!--    <script type="text/javascript" src="js/template.js"></script>-->
 
     <script src="js/lm_data.js"></script>
 
@@ -201,6 +183,34 @@
             }
         }
 
+        function render_relationships(lm_element,col_id){
+
+            $m = $(col_id);
+            $e = $('#relationship-button-template');
+            
+            for( i in lm_element ){
+                var single_element = lm_element[i];
+                
+                $new_element = $e.clone();
+                $(".element-name", $new_element).html(single_element.text)
+                if (single_element.expanded_text == 'none') {
+                    $(".element-details", $new_element).html("")    
+                } else {
+                    $(".element-details", $new_element).html(single_element.expanded_text)    
+                }
+                
+                $new_element.attr("id", "node-div-"+i)
+
+                                
+                $new_element.fadeIn();
+                $m.append($new_element);
+                
+                $new_element.click(function(){
+                    $('.element-details',this).toggle("slide");
+                });
+                
+            }
+        }
         
 
         $(document).ready(function(){
@@ -211,7 +221,7 @@
                 $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
             });
 
-            render_boxes(relationship,"#col-relationships");
+            render_relationships(relationship,"#col-relationships");
             render_boxes(resource,"#col-resources");
             render_boxes(activity,"#col-activities");
             render_boxes(output,"#col-outputs");

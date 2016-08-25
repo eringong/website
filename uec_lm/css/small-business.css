@@ -42,6 +42,7 @@ footer {
 .element-name {
     text-align: left;
     font-weight:bold;
+    white-space:normal;
 }
 
 .element-details{
@@ -62,11 +63,21 @@ footer {
     cursor:pointer;
 }
 
-#compact-view{
-    
+#relationship-button-template{
+    display: none;
 }
 
-.filter-button-text{
-    color:white;
-    text-align: center;
+.relationship-button{
+    height: 40px;
+/*    width: 100px;*/
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+}
+
+.button-text{
+/*    white-space: normal;*/
+/*    text-align: center;*/
+    display:table;
 }
