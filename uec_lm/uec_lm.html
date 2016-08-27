@@ -31,9 +31,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class = "col-md-9">
                 <h1><font color = #f5f5f5>Roseville UEC Logic Model</font></h1>
             </div>
+
+                <ul class="nav navbar-nav">
+                    <li class = "col-md-5">
+                        <div id="detail-view" class="button-text">
+                            <div class="button-text">View Details</div>
+                        </div>        
+                    </li>
+                    <li class = "col-md-5">
+                        <div id="summary" class="button-text">
+                            <div class="button-text">Summary</div>
+                        </div>        
+                    </li>
+                </ul>
+            
         </div>
         <!-- /.container -->
     </nav>
@@ -43,23 +57,13 @@
         
         
         <!-- Sort/Filter buttons -->
-<!--
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="detail-view" class="button-text">
-                    <div class="button-text">View Details</div>
-                </div>        
-            </div>
-        </div>
--->
-        
         <div class="row" id="col-relationships">
             <h2>Relationships</h2>
             <div class="col-md-4 col-xs-3" id='relationship-button-template'>
 <!--				<div class="image-box">-->
 				    <div class="btn btn-default btn-block">
                         <div class="element-name"></div>
-                        <div class="element-details"></div>
+                        <div class="relationship-details"></div>
                     </div>
 
 <!--				</div>-->
@@ -67,7 +71,8 @@
         </div>
         
         <!-- /.row -->
-        
+
+       
         <!-- Call to Action Well -->
 <!--
         <div class="row">
@@ -94,7 +99,7 @@
             <div class="col-md-3 col-xs-3" id="col-resources">
                 <h2>Resources</h2>
                 <p>assets</p>
-                <div id="element-box-template" class="well btn button-text">
+                <div id="element-box-template" class="well element-boxes">
                     <div class="element-name"></div>
                     <div class="element-details"></div>
                 </div>
@@ -123,7 +128,43 @@
         
         <!-- /.row -->
 
-
+        <div class="row">
+            <h2>Summary</h2>
+            <div class="col-md-3">
+                <h4>We collaborate with ...</h4>
+                <div class="well">
+                    Utilities<br>
+                    Local government<br>
+                    Local business<br>
+                    Media<br>
+                    Teachers
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>to ...</h4>
+                <div class="well">
+                    Provide events, programs, and workshops related to our utilities<br>
+                    Continually build relationships with our partners<br>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>to ...</h4>
+                <div class="well">
+                    Families<br>
+                    Adults interested in environment and stewardship<br>
+                    School children<br>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>using ...</h4>
+                <div class="well">
+                    Exhibit space<br>
+                    Staff and volunteer support<br>
+                    Grant funding, partnerships, sponsorships<br>
+                    Partnerships
+                </div>
+            </div>
+        </div>
         
         <!-- Footer -->
         <footer>
@@ -194,9 +235,9 @@
                 $new_element = $e.clone();
                 $(".element-name", $new_element).html(single_element.text)
                 if (single_element.expanded_text == 'none') {
-                    $(".element-details", $new_element).html("")    
+                    $(".relationship-details", $new_element).html("")    
                 } else {
-                    $(".element-details", $new_element).html(single_element.expanded_text)    
+                    $(".relationship-details", $new_element).html(single_element.expanded_text)    
                 }
                 
                 $new_element.attr("id", "node-div-"+i)
@@ -206,7 +247,7 @@
                 $m.append($new_element);
                 
                 $new_element.click(function(){
-                    $('.element-details',this).toggle("slide");
+                    $('.relationship-details',this).toggle("slide");
                 });
                 
             }
@@ -215,18 +256,28 @@
 
         $(document).ready(function(){
             $('.element-details').hide();
+            $('.relationship-details').hide();
 
             $("#detail-view").click(function(){
                 $('.element-details').toggle("slide"); 
                 $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
             });
 
+            $("#summary").click(function(){
+                $('#col-resources').toggle("slide"); 
+                $('#col-relationships').toggle("slide"); 
+                $('#col-activities').toggle("slide"); 
+                $('#col-outputs').toggle("slide"); 
+                $('#col-outcomes').toggle("slide");                 
+//                $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
+            });
+
             render_relationships(relationship,"#col-relationships");
+            
             render_boxes(resource,"#col-resources");
             render_boxes(activity,"#col-activities");
             render_boxes(output,"#col-outputs");
             render_boxes(outcome,"#col-outcomes");
-//            render_boxes(impact,"#col-impacts");
             
             $("#node-div-families").click(function(){
                 for( n in node_list_connect_families ){

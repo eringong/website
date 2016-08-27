@@ -2,67 +2,67 @@ relationship = {
   "families": {
     "text": "Families", 
     "lm_type": "relationship", 
-    "expanded_text": "Includes multi-generational"
+    "expanded_text": "Multi-generational families are the main target audience for UEC. Roseville is a family community, with above average rates for home ownership, income, and education."
   }, 
   "adults": {
-    "text": "adults interested in environmental stewardship", 
+    "text": "Adults interested in environmental stewardship", 
     "lm_type": "relationship", 
-    "expanded_text": "none"
+    "expanded_text": "UEC's adult programs appeal most to people who already have something of an interest in environmental stewardship."
   }, 
   "community_orgs": {
-    "text": "community groups for families", 
+    "text": "Community groups for families", 
     "lm_type": "relationship", 
-    "expanded_text": "none"
+    "expanded_text": "Community groups whose main target audience is families is a sub-audience for UEC -- they connect UEC with a more diverse and focused set of the family audience."
   }, 
   "utility_depts": {
     "text": "Utility Departments", 
     "lm_type": "relationship", 
-    "expanded_text": "Roseville Electric Utility<br>Roseville Environmental Utilities"
+    "expanded_text": "UEC is a branch of publicly-owned utilities: Roseville Electric Utility and Roseville Environmental Utilities."
   }, 
   "media": {
     "text": "Media", 
     "lm_type": "relationship", 
-    "expanded_text": "none"
+    "expanded_text": "UEC works with the news media to promote programs and events."
   }, 
   "mahany_partners": {
     "text": "Mahany Regional Park Partners", 
     "lm_type": "relationship", 
-    "expanded_text": "Library<br>Sports Center<br>Mahany Park"
+    "expanded_text": "UEC is located in the Mahany Park Complex, which includes the Martha Riley Library, Sports Center, and Mahany Park. UEC is located within the library building."
   }, 
   "staff_volunteers": {
     "text": "Staff and volunteers", 
     "lm_type": "relationship", 
-    "expanded_text": "Staff: 4 full time; 3 1500-hr positions, several 1000-hr positions<br>Volunteers: regular (min 8 hrs/mo), special event"
+    "expanded_text": "UEC staff consists of 4 full time staff (museum and interpretive professionals). They are supported by several part-time staff and a volunteer core. Volunteers can either work regularly (min 8 hrs/mo) or work just for special event."
   }, 
   "students_chaperones": {
     "text": "Students and chaperones", 
     "lm_type": "relationship", 
-    "expanded_text": "none"
+    "expanded_text": "Students coming on field trips with their tk-6 teachers are an important audience. Chaperones on these field trips also build commenctions to UEC and can experience outcomes in learning and attitude change as a result of their experience."
   }, 
   "businesses": {
     "text": "Local businesses", 
     "lm_type": "relationship", 
-    "expanded_text": "Event co-hosts<br>Event vendors<br>Sponsors<br>Chamber of Commerce<br>Potential partners"
+    "expanded_text": "UEC wants to build stronger partnerships with local businesses. Partnerhsips could take the shape of event co-hosts, event vendors, sponsors, or Chamber of Commerce"
   }, 
   "teachers": {
     "text": "Teachers and educators", 
     "lm_type": "relationship", 
-    "expanded_text": "tk-6 grade"
+    "expanded_text": "School groups, tk-6 grade, are an important audience for UEC. Exhibits and programs must meet their needs, inclucing content alignment with California State Science Standards. Currently, school groups are maxing out UEC's capacity."
   }, 
   "gardeners": {
     "text": "Gardeners", 
     "lm_type": "relationship", 
-    "expanded_text": "none"
+    "expanded_text": "Gardeners are a regular, core audience for UEC."
   }, 
   "local_govt": {
     "text": "Local government", 
     "lm_type": "relationship", 
-    "expanded_text": "City offices<br>Environmental agencies at local, state regional levels"
+    "expanded_text": "UEC seeks to have a positive relationship with city offices. Additionally, it would like to build up relationships with environmental agencies at local, state regional levels."
   }, 
   "rate_payers": {
-    "text": "Rate payers", 
+    "text": "Utility customers", 
     "lm_type": "relationship", 
-    "expanded_text": "Residential and business"
+    "expanded_text": "Residents and business owners who pay for utilities. These are the owners of UEC, as it is a branch of publicly-owned utilities."
   }
 };
 
@@ -101,19 +101,6 @@ resource = {
     "text": "Business partnerships", 
     "lm_type": "resource", 
     "expanded_text": "Event sponsorship and co-hosting"
-  }, 
-  "evaluation": {
-    "text": "Evaluation", 
-    "lm_type": "resource", 
-    "expanded_text": "none"
-  }
-};
-
-activitiy = {
-  "press_release": {
-    "text": "Press releases and media alerts", 
-    "lm_type": "activitiy", 
-    "expanded_text": "none"
   }
 };
 
@@ -149,14 +136,9 @@ activity = {
     "expanded_text": "none"
   }, 
   "networking": {
-    "text": "networking and relationship building", 
+    "text": "Networking and relationship building", 
     "lm_type": "activity", 
     "expanded_text": "none"
-  }, 
-  "friends_group": {
-    "text": "Become 501c3 or friends group", 
-    "lm_type": "activity", 
-    "expanded_text": "Membership program<br>Tax deductible contributions"
   }, 
   "staff_vol_recruiting": {
     "text": "Staff/volunteer recruiting", 
@@ -167,6 +149,11 @@ activity = {
     "text": "Group tours", 
     "lm_type": "activity", 
     "expanded_text": "Boy and Girl Scouts<br>Homeschool<br>Afterschool<br>Daycare<br>Exhibit Hall Tours<br>LEED Building Facility Tours<br>Pre- and post- materials"
+  }, 
+  "evaluation": {
+    "text": "Evaluation", 
+    "lm_type": "activity", 
+    "expanded_text": "none"
   }, 
   "pre_post_materials": {
     "text": "Pre- and post-tour materials", 
@@ -194,7 +181,7 @@ activity = {
     "expanded_text": "none"
   }, 
   "communicating_value": {
-    "text": "communicating value", 
+    "text": "Communicating value", 
     "lm_type": "activity", 
     "expanded_text": "none"
   }, 
@@ -218,29 +205,27 @@ activity = {
     "lm_type": "activity", 
     "expanded_text": "TK-6<br>State curriculum aligned<br>Zero-waste lunch dump<br>Topics covering: Energy efficiency, waste reduction, watershed protection"
   }, 
-  "curbys": {
-    "text": "Curby\u2019s Waste-a-Palooza", 
-    "lm_type": "activity", 
-    "expanded_text": "none"
-  }, 
   "comic_books": {
     "text": "Comic books", 
-    "lm_type": "activity", 
-    "expanded_text": "none"
-  }, 
-  "count_watts": {
-    "text": "Count Watt\u2019s Spooktacular", 
     "lm_type": "activity", 
     "expanded_text": "none"
   }, 
   "family_programs": {
     "text": "Family programs", 
     "lm_type": "activity", 
-    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps"
+    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps<br>Spooktacular<br>Waste-a-palooza"
   }, 
   "offsite_events": {
     "text": "Other offsite events, co-hosted", 
     "lm_type": "activity", 
+    "expanded_text": "none"
+  }
+};
+
+activitiy = {
+  "press_release": {
+    "text": "Press releases and media alerts", 
+    "lm_type": "activitiy", 
     "expanded_text": "none"
   }
 };
@@ -257,7 +242,7 @@ output = {
     "expanded_text": "none"
   }, 
   "revenue": {
-    "text": "revenue", 
+    "text": "Revenue", 
     "lm_type": "output", 
     "expanded_text": "none"
   }, 
@@ -267,7 +252,7 @@ output = {
     "expanded_text": "none"
   }, 
   "attendance_stats": {
-    "text": "attendance stats", 
+    "text": "Attendance stats", 
     "lm_type": "output", 
     "expanded_text": "none"
   }, 
@@ -277,7 +262,7 @@ output = {
     "expanded_text": "none"
   }, 
   "satisfaction": {
-    "text": "satisfaction ratings", 
+    "text": "Satisfaction ratings", 
     "lm_type": "output", 
     "expanded_text": "none"
   }, 
@@ -292,7 +277,7 @@ output = {
     "expanded_text": "none"
   }, 
   "attendance_demographics": {
-    "text": "attendance demographics", 
+    "text": "Attendance demographics", 
     "lm_type": "output", 
     "expanded_text": "none"
   }, 
@@ -312,7 +297,7 @@ output = {
     "expanded_text": "none"
   }, 
   "retention": {
-    "text": "retention/loyalty", 
+    "text": "Retention/loyalty", 
     "lm_type": "output", 
     "expanded_text": "none"
   }

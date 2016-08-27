@@ -68,7 +68,6 @@ node_list_connect_gardeners = [
   "#node-div-comic_books", 
   "#node-div-pre_post_materials", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -89,7 +88,6 @@ node_list_connect_gardeners = [
   "#node-div-businesses_uec", 
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-opp_sponsor_cohost", 
@@ -122,7 +120,6 @@ node_list_connect_teachers = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -147,7 +144,6 @@ node_list_connect_teachers = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-opp_sponsor_cohost", 
   "#node-div-pursue_grants", 
@@ -158,8 +154,7 @@ node_list_connect_teachers = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_staff_volunteers = [
@@ -187,7 +182,6 @@ node_list_connect_staff_volunteers = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-networking", 
   "#node-div-communicating_value", 
   "#node-div-active_partnerships", 
@@ -209,7 +203,6 @@ node_list_connect_staff_volunteers = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-opp_sponsor_cohost", 
@@ -221,8 +214,7 @@ node_list_connect_staff_volunteers = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_students_chaperones = [
@@ -246,7 +238,6 @@ node_list_connect_students_chaperones = [
   "#node-div-visit_exhibit", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -272,7 +263,6 @@ node_list_connect_students_chaperones = [
   "#node-div-businesses_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-opp_sponsor_cohost", 
   "#node-div-pursue_grants", 
@@ -283,8 +273,7 @@ node_list_connect_students_chaperones = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_businesses = [
@@ -310,7 +299,6 @@ node_list_connect_businesses = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -331,7 +319,6 @@ node_list_connect_businesses = [
   "#node-div-staff_empowered", 
   "#node-div-volunteers_love", 
   "#node-div-rate_payers_uec", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-community_orgs", 
@@ -340,8 +327,7 @@ node_list_connect_businesses = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_media = [
@@ -367,7 +353,6 @@ node_list_connect_media = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -394,7 +379,6 @@ node_list_connect_media = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-opp_sponsor_cohost", 
@@ -405,8 +389,7 @@ node_list_connect_media = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_local_govt = [
@@ -432,7 +415,6 @@ node_list_connect_local_govt = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -456,7 +438,6 @@ node_list_connect_local_govt = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-community_orgs", 
@@ -465,8 +446,7 @@ node_list_connect_local_govt = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_utility_depts = [
@@ -492,7 +472,6 @@ node_list_connect_utility_depts = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -519,7 +498,6 @@ node_list_connect_utility_depts = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-pursue_grants", 
@@ -529,8 +507,7 @@ node_list_connect_utility_depts = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_mahany_partners = [
@@ -557,7 +534,6 @@ node_list_connect_mahany_partners = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -586,7 +562,6 @@ node_list_connect_mahany_partners = [
   "#node-div-rate_payers_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-pursue_grants", 
   "#node-div-community_orgs", 
@@ -595,8 +570,7 @@ node_list_connect_mahany_partners = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 
 node_list_connect_rate_payers = [
@@ -622,7 +596,6 @@ node_list_connect_rate_payers = [
   "#node-div-pre_post_materials", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -650,7 +623,6 @@ node_list_connect_rate_payers = [
   "#node-div-businesses_uec", 
   "#node-div-celebrate_earth", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-opp_sponsor_cohost", 
@@ -680,7 +652,6 @@ node_list_connect_adults = [
   "#node-div-comic_books", 
   "#node-div-gardening_workshops", 
   "#node-div-family_programs", 
-  "#node-div-count_watts", 
   "#node-div-staff_vol_development", 
   "#node-div-staff_vol_recruiting", 
   "#node-div-staff_vol_appreciation", 
@@ -745,7 +716,6 @@ node_list_connect_community_orgs = [
   "#node-div-businesses_uec", 
   "#node-div-rate_payers_uec", 
   "#node-div-greener_gardens", 
-  "#node-div-curbys", 
   "#node-div-offsite_events", 
   "#node-div-library_tour", 
   "#node-div-opp_sponsor_cohost", 
@@ -755,7 +725,6 @@ node_list_connect_community_orgs = [
   "#node-div-adult_workshops", 
   "#node-div-electric_workshops", 
   "#node-div-light_exchange", 
-  "#node-div-ewaste_drop", 
-  "#node-div-friends_group"
+  "#node-div-ewaste_drop"
 ];
 

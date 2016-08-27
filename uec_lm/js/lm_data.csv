@@ -1,30 +1,21 @@
 lm_type,text,expanded_text,id_short,connect_families,connect_gardeners,connect_teachers,connect_staff_volunteers,connect_students_chaperones,connect_businesses,connect_media,connect_local_govt,connect_utility_depts,connect_mahany_partners,connect_rate_payers,connect_adults,connect_community_orgs
-relationship,Rate payers,Residential and business,rate_payers,,,,,,,,,,,1,,
-relationship,Mahany Regional Park Partners,"Library
-Sports Center
-Mahany Park",mahany_partners,,,,,,,,,,1,,,
-relationship,Utility Departments,"Roseville Electric Utility
-Roseville Environmental Utilities",utility_depts,,,,,,,,,1,,,,
-relationship,Local government,"City offices
-Environmental agencies at local, state regional levels",local_govt,,,,,,,,1,,,,,
-relationship,Media,none,media,,,,,,,1,,,,,,
-relationship,Local businesses,"Event co-hosts
-Event vendors
-Sponsors
-Chamber of Commerce
-Potential partners",businesses,,,,,,1,,,,,,,
-relationship,Students and chaperones,none,students_chaperones,,,,,1,,,,,,,,
-relationship,Staff and volunteers,"Staff: 4 full time; 3 1500-hr positions, several 1000-hr positions
-Volunteers: regular (min 8 hrs/mo), special event",staff_volunteers,,,,1,,,,,,,,,
-relationship,Teachers and educators,tk-6 grade,teachers,,,1,,,,,,,,,,
-relationship,Gardeners,none,gardeners,,1,,,,,,,,,,,
-relationship,Families,Includes multi-generational,families,1,,,,,,,,,,,,
+relationship,Utility customers,"Residents and business owners who pay for utilities. These are the owners of UEC, as it is a branch of publicly-owned utilities.",rate_payers,,,,,,,,,,,1,,
+relationship,Mahany Regional Park Partners,"UEC is located in the Mahany Park Complex, which includes the Martha Riley Library, Sports Center, and Mahany Park. UEC is located within the library building.",mahany_partners,,,,,,,,,,1,,,
+relationship,Utility Departments,UEC is a branch of publicly-owned utilities: Roseville Electric Utility and Roseville Environmental Utilities.,utility_depts,,,,,,,,,1,,,,
+relationship,Local government,"UEC seeks to have a positive relationship with city offices. Additionally, it would like to build up relationships with environmental agencies at local, state regional levels.",local_govt,,,,,,,,1,,,,,
+relationship,Media,UEC works with the news media to promote programs and events.,media,,,,,,,1,,,,,,
+relationship,Local businesses,"UEC wants to build stronger partnerships with local businesses. Partnerhsips could take the shape of event co-hosts, event vendors, sponsors, or Chamber of Commerce",businesses,,,,,,1,,,,,,,
+relationship,Students and chaperones,Students coming on field trips with their tk-6 teachers are an important audience. Chaperones on these field trips also build commenctions to UEC and can experience outcomes in learning and attitude change as a result of their experience.,students_chaperones,,,,,1,,,,,,,,
+relationship,Staff and volunteers,UEC staff consists of 4 full time staff (museum and interpretive professionals). They are supported by several part-time staff and a volunteer core. Volunteers can either work regularly (min 8 hrs/mo) or work just for special event.,staff_volunteers,,,,1,,,,,,,,,
+relationship,Teachers and educators,"School groups, tk-6 grade, are an important audience for UEC. Exhibits and programs must meet their needs, inclucing content alignment with California State Science Standards. Currently, school groups are maxing out UEC's capacity.",teachers,,,1,,,,,,,,,,
+relationship,Gardeners,"Gardeners are a regular, core audience for UEC.",gardeners,,1,,,,,,,,,,,
+relationship,Families,"Multi-generational families are the main target audience for UEC. Roseville is a family community, with above average rates for home ownership, income, and education.",families,1,,,,,,,,,,,,
 resource,Exhibit space,Inside and outside (IDEAscape),exhibit_space,1,,1,,1,,,,,,1,1,1
 resource,Workshop space,none,workshop_space,,1,1,,,,,,,,,1,1
 resource,Marketing,"Website (including re-design)
 Social media: Twitter, FB
 Collateral: printed materials, brochures",marketing,1,1,1,,,,,,,,1,1,1
-resource,Evaluation,none,evaluation,1,1,1,,,,,,,,,1,1
+activity,Evaluation,none,evaluation,1,1,1,,,,,,,,,1,1
 resource,Business partnerships,Event sponsorship and co-hosting,business_partnership,1,,,,,1,,1,1,,,1,1
 resource,Staff/volunteer support,"Knowledge: content and pedagogy
 Educators, instructors
@@ -42,26 +33,27 @@ activity,Gardening workshops,"Gardening workshops (modest fee)
 Green Gardening at Home Series",gardening_workshops,,1,,,,,,,,,,,
 activity,Family programs,"Free Prek program (monthly, 2 hrs, mornings, dropin)
 Family events (summer, Big Trucks Summer, free)
-Summer camps",family_programs,1,,,,,,,,,,,,
-activity,Count Watt’s Spooktacular,none,count_watts,1,,,,,,,,,,,,1
+Summer camps
+Spooktacular
+Waste-a-palooza",family_programs,1,,,,,,,,,,,,
 activity,Staff/volunteer development,none,staff_vol_development,,,,1,,,,,,,,,
 activity,Staff/volunteer recruiting,none,staff_vol_recruiting,,,,1,,,,,,,,,
 activity,Staff/volunteer appreciation and support,none,staff_vol_appreciation,,,,1,,,,,,,,,
-activity,networking and relationship building,none,networking,,,,,,1,1,1,1,,,,
-activity,communicating value,none,communicating_value,,,,,,1,,1,1,,1,,
+activity,Networking and relationship building,none,networking,,,,,,1,1,1,1,,,,
+activity,Communicating value,none,communicating_value,,,,,,1,,1,1,,1,,
 output,# active partnerships,none,active_partnerships,,,,,,1,1,1,,1,,,
 output,# volunteer hrs,none,vol_hours,,,,1,,,,,,,,,
 output,# volunteers,none,vol_num,,,,1,,,,,,,,,
 output,"# full time, part time, fte",none,staff_num,,,,1,,,,,,,,,
-output,attendance stats,none,attendance_stats,1,1,1,,1,,,,,,,1,1
-output,attendance demographics,none,attendance_demographics,1,1,1,,,,,,,,,1,1
-output,retention/loyalty,none,retention,1,1,,1,,1,,,,,,1,
-output,revenue,none,revenue,1,1,1,,,,,,,,,1,1
+output,Attendance stats,none,attendance_stats,1,1,1,,1,,,,,,,1,1
+output,Attendance demographics,none,attendance_demographics,1,1,1,,,,,,,,,1,1
+output,Retention/loyalty,none,retention,1,1,,1,,1,,,,,,1,
+output,Revenue,none,revenue,1,1,1,,,,,,,,,1,1
 output,"$ amt of donations, grants",none,donations_grants,,,,,,1,,1,,,,,
 output,"# sponsors, @ which levels, $ amt",none,sponsorships,,,,,,1,,1,,,,,
 output,"#, type of media hits",none,media_hits,,,,,,,1,,,,,,
 output,% space/capacity reached,none,space_capacity,1,1,1,,,,,,,,,1,1
-output,satisfaction ratings,none,satisfaction,1,1,,,,,,,,,1,1,1
+output,Satisfaction ratings,none,satisfaction,1,1,,,,,,,,,1,1,1
 output,# of programs delivered,none,quantity_completed,1,1,1,,,,,,,,,1,1
 outcome,"Reflect on the interconnectedness between utility, customer, community, and planet","I am part of many systems.
 I am part of the natural world.
@@ -88,14 +80,13 @@ outcome,Businesses and institutions see UEC as a mutually beneficial partnership
 outcome,Rate payers see UEC as a worthwhile investment.,none,rate_payers_uec,,,,,1,,,,,,1,,
 activity,Celebrate the Earth festival ,none,celebrate_earth,1,,,,,1,,,,,,1,1
 activity,Greener Gardens Tour & DIY Expo ,none,greener_gardens,,1,,,,1,,,,,,,
-activity,Curby’s Waste-a-Palooza,none,curbys,1,,,,,,,,,,,1,
 activity,"Other offsite events, co-hosted",none,offsite_events,1,,,,,,,,,,,1,
 activity,Library tour as part of school tours,none,library_tour,,,1,,1,,,,,1,,,
 activity,"Opportunities for sponsorships, co-hosting events",none,opp_sponsor_cohost,,,,,,1,,1,1,1,,,
 activity,Pursuing grant funding,"capital improvements, program development, program expansion and sponsorships",pursue_grants,,,,,,1,,1,,,,,
 resource,UEC's reputation as a place worth connecting to,none,uec_reputation,,,,,,1,1,1,1,1,,,
-relationship,community groups for families,none,community_orgs,,,,,,,,,,,,,1
-relationship,adults interested in environmental stewardship,none,adults,,,,,,,,,,,,1,
+relationship,Community groups for families,Community groups whose main target audience is families is a sub-audience for UEC -- they connect UEC with a more diverse and focused set of the family audience.,community_orgs,,,,,,,,,,,,,1
+relationship,Adults interested in environmental stewardship,UEC's adult programs appeal most to people who already have something of an interest in environmental stewardship.,adults,,,,,,,,,,,,1,
 activity,Group tours,"Boy and Girl Scouts
 Homeschool
 Afterschool
@@ -108,5 +99,3 @@ Modest fee",adult_workshops,,,,,,,,,,,,1,
 activity,Electric workshops,Solar,electric_workshops,,,,,,,,,,,1,1,
 activity,LED Holiday Lights exchange,none,light_exchange,,,,,,,,,,,1,1,
 activity,E-waste and paper shredding drop-offs/events,none,ewaste_drop,,,,,,,,,,,1,1,
-activity,Become 501c3 or friends group,"Membership program
-Tax deductible contributions",friends_group,1,1,,,,,,,,,1,1,
