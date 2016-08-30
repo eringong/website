@@ -61,7 +61,7 @@
             <h2>Relationships</h2>
             <div class="col-md-4 col-xs-3" id='relationship-button-template'>
 <!--				<div class="image-box">-->
-				    <div class="btn btn-default btn-block">
+				    <div class="btn btn-default btn-block relationship-button">
                         <div class="element-name"></div>
                         <div class="relationship-details"></div>
                     </div>
@@ -278,6 +278,7 @@
             render_boxes(activity,"#col-activities");
             render_boxes(output,"#col-outputs");
             render_boxes(outcome,"#col-outcomes");
+            
             
             $("#node-div-families").click(function(){
                 for( n in node_list_connect_families ){

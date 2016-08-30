@@ -82,12 +82,7 @@ footer {
 }
 
 .relationship-button{
-    height: 40px;
-/*    width: 100px;*/
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: dodgerblue;
-    border-radius: 4px;
+    white-space:normal;
 }
 
 .relationship-details{

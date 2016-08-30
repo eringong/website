@@ -68,7 +68,7 @@ relationship = {
 
 resource = {
   "sponsorships_donations_grants": {
-    "text": "Sponsorships, donations, grant funding", 
+    "text": "Utility funding, sponsorships, donations, grant funding", 
     "lm_type": "resource", 
     "expanded_text": "none"
   }, 
@@ -101,12 +101,22 @@ resource = {
     "text": "Business partnerships", 
     "lm_type": "resource", 
     "expanded_text": "Event sponsorship and co-hosting"
+  }, 
+  "plug_in": {
+    "text": "Plug-in Vehicle (wrap advertising)", 
+    "lm_type": "resource", 
+    "expanded_text": "none"
   }
 };
 
 activity = {
   "ewaste_drop": {
-    "text": "E-waste and paper shredding drop-offs/events", 
+    "text": "E-waste drop-off", 
+    "lm_type": "activity", 
+    "expanded_text": "none"
+  }, 
+  "school_outreach": {
+    "text": "School outreach (future)", 
     "lm_type": "activity", 
     "expanded_text": "none"
   }, 
@@ -116,17 +126,12 @@ activity = {
     "expanded_text": "none"
   }, 
   "gardening_workshops": {
-    "text": "Gardening workshops", 
+    "text": "Gardening workshops and events", 
     "lm_type": "activity", 
     "expanded_text": "Gardening workshops (modest fee)<br>Green Gardening at Home Series"
   }, 
   "library_tour": {
     "text": "Library tour as part of school tours", 
-    "lm_type": "activity", 
-    "expanded_text": "none"
-  }, 
-  "greener_gardens": {
-    "text": "Greener Gardens Tour & DIY Expo ", 
     "lm_type": "activity", 
     "expanded_text": "none"
   }, 
@@ -176,9 +181,9 @@ activity = {
     "expanded_text": "capital improvements, program development, program expansion and sponsorships"
   }, 
   "light_exchange": {
-    "text": "LED Holiday Lights exchange", 
+    "text": "Partner Programs", 
     "lm_type": "activity", 
-    "expanded_text": "none"
+    "expanded_text": "LED Holiday Lights exchange<br>Light bulb sales<br>Fix a Leak Week"
   }, 
   "communicating_value": {
     "text": "Communicating value", 
@@ -213,7 +218,7 @@ activity = {
   "family_programs": {
     "text": "Family programs", 
     "lm_type": "activity", 
-    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps<br>Spooktacular<br>Waste-a-palooza"
+    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps<br>Family drop-in events (Waste-a-Palooza, Count Watts' Spooktacular, Bird and Bug Bonanza, Get Energized, free)<br>Social events for families and adults"
   }, 
   "offsite_events": {
     "text": "Other offsite events, co-hosted", 
@@ -279,7 +284,7 @@ output = {
   "attendance_demographics": {
     "text": "Attendance demographics", 
     "lm_type": "output", 
-    "expanded_text": "none"
+    "expanded_text": "Zipcode<br>Race/ethnicity, age, education, income<br>Group composition (e.g. # adults/children per group)"
   }, 
   "active_partnerships": {
     "text": "# active partnerships", 
@@ -320,7 +325,7 @@ outcome = {
     "expanded_text": "none"
   }, 
   "utilities_uec": {
-    "text": "Utilities see UEC as essential to meeting their goals for reduction of waste/consumption", 
+    "text": "Utilities see UEC as essential to meeting their mandates for reduction of waste, consumption, and other targets", 
     "lm_type": "outcome", 
     "expanded_text": "none"
   }, 

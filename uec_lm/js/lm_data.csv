@@ -20,7 +20,8 @@ resource,Business partnerships,Event sponsorship and co-hosting,business_partner
 resource,Staff/volunteer support,"Knowledge: content and pedagogy
 Educators, instructors
 Man power",staff_vol_support,1,1,1,,,1,1,1,1,1,,1,1
-resource,"Sponsorships, donations, grant funding",none,sponsorships_donations_grants,,,1,,,,,,,,,,1
+resource,"Utility funding, sponsorships, donations, grant funding",none,sponsorships_donations_grants,,,1,,,,,,,,,,1
+resource,Plug-in Vehicle (wrap advertising),none,plug_in,1,1,1,,,,,,,,1,1,1
 activitiy,Press releases and media alerts,none,press_release,,,,,,,1,,,,,,
 activity,Visit exhibition (self-directed),none,visit_exhibit,1,,,,,,,,,,,1,
 activity,Planet Protectors,"TK-6
@@ -29,14 +30,15 @@ Zero-waste lunch dump
 Topics covering: Energy efficiency, waste reduction, watershed protection",planet_protectors,,,1,,1,,,,,,,,
 activity,Comic books,none,comic_books,,,,,1,,,,,,,,
 activity,Pre- and post-tour materials,none,pre_post_materials,,,,,1,,,,,,,1,1
-activity,Gardening workshops,"Gardening workshops (modest fee)
+activity,Gardening workshops and events,"Gardening workshops (modest fee)
 Green Gardening at Home Series",gardening_workshops,,1,,,,,,,,,,,
 activity,Family programs,"Free Prek program (monthly, 2 hrs, mornings, dropin)
 Family events (summer, Big Trucks Summer, free)
 Summer camps
-Spooktacular
-Waste-a-palooza",family_programs,1,,,,,,,,,,,,
+Family drop-in events (Waste-a-Palooza, Count Watts' Spooktacular, Bird and Bug Bonanza, Get Energized, free)
+Social events for families and adults",family_programs,1,,,,,,,,,,,,
 activity,Staff/volunteer development,none,staff_vol_development,,,,1,,,,,,,,,
+activity,School outreach (future),none,school_outreach,,,1,,,,,,,,,,
 activity,Staff/volunteer recruiting,none,staff_vol_recruiting,,,,1,,,,,,,,,
 activity,Staff/volunteer appreciation and support,none,staff_vol_appreciation,,,,1,,,,,,,,,
 activity,Networking and relationship building,none,networking,,,,,,1,1,1,1,,,,
@@ -46,7 +48,9 @@ output,# volunteer hrs,none,vol_hours,,,,1,,,,,,,,,
 output,# volunteers,none,vol_num,,,,1,,,,,,,,,
 output,"# full time, part time, fte",none,staff_num,,,,1,,,,,,,,,
 output,Attendance stats,none,attendance_stats,1,1,1,,1,,,,,,,1,1
-output,Attendance demographics,none,attendance_demographics,1,1,1,,,,,,,,,1,1
+output,Attendance demographics,"Zipcode
+Race/ethnicity, age, education, income
+Group composition (e.g. # adults/children per group)",attendance_demographics,1,1,1,,,,,,,,,1,1
 output,Retention/loyalty,none,retention,1,1,,1,,1,,,,,,1,
 output,Revenue,none,revenue,1,1,1,,,,,,,,,1,1
 output,"$ amt of donations, grants",none,donations_grants,,,,,,1,,1,,,,,
@@ -73,13 +77,12 @@ home
 
 “I can act today and make a difference.”",stewardship,1,1,,,1,,,,,,,1,1
 outcome,UEC is a recognized leader for utility education and interpretation.,none,uec_leader,,,1,,,1,1,1,1,,,,
-outcome,Utilities see UEC as essential to meeting their goals for reduction of waste/consumption,none,utilities_uec,,,,,,,,,1,,,,
+outcome,"Utilities see UEC as essential to meeting their mandates for reduction of waste, consumption, and other targets",none,utilities_uec,,,,,,,,,1,,,,
 outcome,Staff are empowered.,none,staff_empowered,,,,1,,,,,,,,,
 outcome,Volunteers love what they do.,none,volunteers_love,,,,1,,,,,,,,,
 outcome,Businesses and institutions see UEC as a mutually beneficial partnership.,none,businesses_uec,,,,,,1,,1,,1,,,
 outcome,Rate payers see UEC as a worthwhile investment.,none,rate_payers_uec,,,,,1,,,,,,1,,
 activity,Celebrate the Earth festival ,none,celebrate_earth,1,,,,,1,,,,,,1,1
-activity,Greener Gardens Tour & DIY Expo ,none,greener_gardens,,1,,,,1,,,,,,,
 activity,"Other offsite events, co-hosted",none,offsite_events,1,,,,,,,,,,,1,
 activity,Library tour as part of school tours,none,library_tour,,,1,,1,,,,,1,,,
 activity,"Opportunities for sponsorships, co-hosting events",none,opp_sponsor_cohost,,,,,,1,,1,1,1,,,
@@ -97,5 +100,7 @@ Pre- and post- materials",group_tours,,,,,,,,,,,,1,1
 activity,Adult workshops,"e.g. Recycled knitted
 Modest fee",adult_workshops,,,,,,,,,,,,1,
 activity,Electric workshops,Solar,electric_workshops,,,,,,,,,,,1,1,
-activity,LED Holiday Lights exchange,none,light_exchange,,,,,,,,,,,1,1,
-activity,E-waste and paper shredding drop-offs/events,none,ewaste_drop,,,,,,,,,,,1,1,
+activity,Partner Programs,"LED Holiday Lights exchange
+Light bulb sales
+Fix a Leak Week",light_exchange,,,,,,1,,,,,1,1,
+activity,E-waste drop-off,none,ewaste_drop,,,,,,,,,,,1,1,
