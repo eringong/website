@@ -1,18 +1,23 @@
 relationship = {
+  "young_adults": {
+    "text": "Young adults", 
+    "lm_type": "relationship", 
+    "expanded_text": "UEC would like to create programs, services, and events geared towards young adults. UEC imagines this audience as 20-somethings who are independent from their parents and too young for kids."
+  }, 
   "families": {
     "text": "Families", 
     "lm_type": "relationship", 
     "expanded_text": "Multi-generational families are the main target audience for UEC. Roseville is a family community, with above average rates for home ownership, income, and education."
   }, 
   "adults": {
-    "text": "Adults interested in environmental stewardship", 
+    "text": "Adults", 
     "lm_type": "relationship", 
-    "expanded_text": "UEC's adult programs appeal most to people who already have something of an interest in environmental stewardship."
+    "expanded_text": "UEC's adult audience is thought of as adults 40+ years old, without kids and with time. Current programs appeal most to people who already have something of an interest in environmental stewardship. Some targeted outreach has been done to senior locations (sun city, retirement communities) but the adult audience is not limited to seniors."
   }, 
   "community_orgs": {
-    "text": "Community groups for families", 
+    "text": "Non-profits or community groups with shared audience or mission", 
     "lm_type": "relationship", 
-    "expanded_text": "Community groups whose main target audience is families is a sub-audience for UEC -- they connect UEC with a more diverse and focused set of the family audience."
+    "expanded_text": "Community groups whose main target audience is families is a sub-audience for UEC -- they connect UEC with a more diverse and focused set of the family audience.<br>Other organizations who have the same mission can be excellent partners for UEC. For example, the Nature Center, Master Gardeners."
   }, 
   "utility_depts": {
     "text": "Utility Departments", 
@@ -22,17 +27,12 @@ relationship = {
   "media": {
     "text": "Media", 
     "lm_type": "relationship", 
-    "expanded_text": "UEC works with the news media to promote programs and events."
-  }, 
-  "mahany_partners": {
-    "text": "Mahany Regional Park Partners", 
-    "lm_type": "relationship", 
-    "expanded_text": "UEC is located in the Mahany Park Complex, which includes the Martha Riley Library, Sports Center, and Mahany Park. UEC is located within the library building."
+    "expanded_text": "UEC works with the news media to promote programs and events.<br>Current programs and events attract \"morning show\" type of attention.<br>Hope to connect with social media influencers (bloggers, twitter accts, etc)"
   }, 
   "staff_volunteers": {
     "text": "Staff and volunteers", 
     "lm_type": "relationship", 
-    "expanded_text": "UEC staff consists of 4 full time staff (museum and interpretive professionals). They are supported by several part-time staff and a volunteer core. Volunteers can either work regularly (min 8 hrs/mo) or work just for special event."
+    "expanded_text": "UEC staff consists of 4 full time staff (museum and interpretive professionals) and 5 part time staff. They are supported by several part-time staff and a volunteer core. Volunteers can either work regularly (min 8 hrs/mo) or work just for special event.<br>UEC is in a period of growth from a small multi-functional staff team, to a larger more specialized staff group with managers and entry-level staff.<br>Volunteer corps needs to grow, especially when IDEAscape opens -- will need more presence on the floor"
   }, 
   "students_chaperones": {
     "text": "Students and chaperones", 
@@ -57,16 +57,26 @@ relationship = {
   "local_govt": {
     "text": "Local government", 
     "lm_type": "relationship", 
-    "expanded_text": "UEC seeks to have a positive relationship with city offices. Additionally, it would like to build up relationships with environmental agencies at local, state regional levels."
+    "expanded_text": "UEC seeks to have a positive relationship with city offices. UEC works most often with parks & rec, library, open space department, and alternative transporation. Additionally, it would like to build up relationships with environmental agencies at local, state regional levels.<br>UEC is located in the Mahany Park Complex, which includes the Martha Riley Library, Sports Center, and Mahany Park. UEC is located within the library building."
   }, 
   "rate_payers": {
     "text": "Utility customers", 
     "lm_type": "relationship", 
     "expanded_text": "Residents and business owners who pay for utilities. These are the owners of UEC, as it is a branch of publicly-owned utilities."
+  }, 
+  "teens": {
+    "text": "Teen", 
+    "lm_type": "relationship", 
+    "expanded_text": "UEC would like to create programs, services, and events geared towards teens. Right now, this is an aspirational audience."
   }
 };
 
 resource = {
+  "office_storage_space": {
+    "text": "Office and storage space", 
+    "lm_type": "resource", 
+    "expanded_text": "none"
+  }, 
   "sponsorships_donations_grants": {
     "text": "Utility funding, sponsorships, donations, grant funding", 
     "lm_type": "resource", 
@@ -81,6 +91,11 @@ resource = {
     "text": "Marketing", 
     "lm_type": "resource", 
     "expanded_text": "Website (including re-design)<br>Social media: Twitter, FB<br>Collateral: printed materials, brochures"
+  }, 
+  "tech_it_equip": {
+    "text": "Technology, IT, Equipment", 
+    "lm_type": "resource", 
+    "expanded_text": "none"
   }, 
   "staff_vol_support": {
     "text": "Staff/volunteer support", 
@@ -103,9 +118,14 @@ resource = {
     "expanded_text": "Event sponsorship and co-hosting"
   }, 
   "plug_in": {
-    "text": "Plug-in Vehicle (wrap advertising)", 
+    "text": "Plug-in vehicle", 
     "lm_type": "resource", 
-    "expanded_text": "none"
+    "expanded_text": "Wrap advertising<br>Out in communities<br>Marketing -- get people to come to UEC"
+  }, 
+  "audience_sharing": {
+    "text": "Audience sharing", 
+    "lm_type": "resource", 
+    "expanded_text": "Sharing audiences and connections with other organizations<br>Currently share audiences with library quite a bit"
   }
 };
 
@@ -143,7 +163,7 @@ activity = {
   "networking": {
     "text": "Networking and relationship building", 
     "lm_type": "activity", 
-    "expanded_text": "none"
+    "expanded_text": "Proactive in forging relationships"
   }, 
   "staff_vol_recruiting": {
     "text": "Staff/volunteer recruiting", 
@@ -168,7 +188,7 @@ activity = {
   "staff_vol_development": {
     "text": "Staff/volunteer development", 
     "lm_type": "activity", 
-    "expanded_text": "none"
+    "expanded_text": "Customer service training<br>Specialized training (topical, content-based)"
   }, 
   "adult_workshops": {
     "text": "Adult workshops", 
@@ -185,10 +205,15 @@ activity = {
     "lm_type": "activity", 
     "expanded_text": "LED Holiday Lights exchange<br>Light bulb sales<br>Fix a Leak Week"
   }, 
+  "staff_onboarding": {
+    "text": "Staff/volunteer onboarding", 
+    "lm_type": "activity", 
+    "expanded_text": "orientation<br>tours of utility facilities<br>\"mind-meld\" with the current staff/volunteers<br>uniforms and identification"
+  }, 
   "communicating_value": {
     "text": "Communicating value", 
     "lm_type": "activity", 
-    "expanded_text": "none"
+    "expanded_text": "UEC is a showpiece for Utilities to show how they are meeting their mandates (visits to UEC by agency/legislative officials)"
   }, 
   "electric_workshops": {
     "text": "Electric workshops", 
@@ -203,7 +228,12 @@ activity = {
   "opp_sponsor_cohost": {
     "text": "Opportunities for sponsorships, co-hosting events", 
     "lm_type": "activity", 
-    "expanded_text": "none"
+    "expanded_text": "e.g. regional utilities can do events, booths, giveaways"
+  }, 
+  "social_events": {
+    "text": "Social events", 
+    "lm_type": "activity", 
+    "expanded_text": "For families and adults<br>Talk about messages in social atmosphere (e.g. cocktails or beer/wine evenings,<br>or go on a bike ride to explore an area with ice cream at the end)"
   }, 
   "planet_protectors": {
     "text": "Planet Protectors", 
@@ -218,12 +248,17 @@ activity = {
   "family_programs": {
     "text": "Family programs", 
     "lm_type": "activity", 
-    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps<br>Family drop-in events (Waste-a-Palooza, Count Watts' Spooktacular, Bird and Bug Bonanza, Get Energized, free)<br>Social events for families and adults"
+    "expanded_text": "Free Prek program (monthly, 2 hrs, mornings, dropin)<br>Family events (summer, Big Trucks Summer, free)<br>Summer camps<br>Family drop-in events (Waste-a-Palooza, Count Watts' Spooktacular, Bird and Bug Bonanza, Get Energized, free)"
   }, 
   "offsite_events": {
     "text": "Other offsite events, co-hosted", 
     "lm_type": "activity", 
     "expanded_text": "none"
+  }, 
+  "host_training": {
+    "text": "Hosting training workshops", 
+    "lm_type": "activity", 
+    "expanded_text": "Host training workshops for community businesses in organic materials, water efficiency, lighting"
   }
 };
 
@@ -243,6 +278,11 @@ output = {
   }, 
   "vol_hours": {
     "text": "# volunteer hrs", 
+    "lm_type": "output", 
+    "expanded_text": "none"
+  }, 
+  "proportion_staff_vol": {
+    "text": "proportion of incoming/outgoing staff and volunteers", 
     "lm_type": "output", 
     "expanded_text": "none"
   }, 
@@ -309,6 +349,11 @@ output = {
 };
 
 outcome = {
+  "staff_excellence": {
+    "text": "Staff and volunteers carry on tradition of excellence in programs and services, even during periods of growth and change", 
+    "lm_type": "outcome", 
+    "expanded_text": "none"
+  }, 
   "uec_leader": {
     "text": "UEC is a recognized leader for utility education and interpretation.", 
     "lm_type": "outcome", 
@@ -316,6 +361,11 @@ outcome = {
   }, 
   "staff_empowered": {
     "text": "Staff are empowered.", 
+    "lm_type": "outcome", 
+    "expanded_text": "none"
+  }, 
+  "vol_ambassador": {
+    "text": "Volunteers and staff are ambassadors to the community", 
     "lm_type": "outcome", 
     "expanded_text": "none"
   }, 
@@ -344,10 +394,20 @@ outcome = {
     "lm_type": "outcome", 
     "expanded_text": "none"
   }, 
+  "career_advancement": {
+    "text": "Staff/volunteers advance their careers by working at UEC", 
+    "lm_type": "outcome", 
+    "expanded_text": "UEC is a starting place for a variety of careers<br>UEC is a starting place for working in other city departments"
+  }, 
   "amazement": {
     "text": "Amaze with what our utilities do every day.", 
     "lm_type": "outcome", 
     "expanded_text": "My utilities do some complex things.<br>Trust.<br><br>\u201cI\u2019m amazed by and grateful for what great things can be done by great people, both in my community and in my utilities.\u201d"
+  }, 
+  "staff_proactive": {
+    "text": "Staff can be proactive and strategic.", 
+    "lm_type": "outcome", 
+    "expanded_text": "none"
   }, 
   "interconnected": {
     "text": "Reflect on the interconnectedness between utility, customer, community, and planet", 
