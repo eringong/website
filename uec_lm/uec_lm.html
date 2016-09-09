@@ -128,7 +128,7 @@
         
         <!-- /.row -->
 
-        <div class="row">
+        <div class="row" id="summary-section">
             <h2>Summary</h2>
             <div class="col-md-3">
                 <h4>We collaborate with ...</h4>
@@ -278,10 +278,13 @@
         $(document).ready(function(){
             $('.element-details').hide();
             $('.relationship-details').hide();
+            $('#summary-section').hide();
 
             $("#detail-view").click(function(){
                 $('.element-details').toggle("slide"); 
                 $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
+
+
             });
 
             $("#summary").click(function(){
@@ -289,8 +292,9 @@
                 $('#col-relationships').toggle("slide"); 
                 $('#col-activities').toggle("slide"); 
                 $('#col-outputs').toggle("slide"); 
-                $('#col-outcomes').toggle("slide");                 
-//                $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
+                $('#col-outcomes').toggle("slide"); 
+                $('#summary-section').toggle();                
+                $(this).html($(this).html() == "Full" ? "Summary" : "Full");
             });
 
             render_relationships(relationship,"#col-relationships");
