@@ -1,0 +1,59 @@
+lm_type,text,expanded_text,id_short,connect_parents,connect_families,connect_preschools,connect_artists_eciprofs,connect_museums,type
+relationships,Parents,none,parents,1,,,,,both
+outcomes,"Parents increase knowledge, skills, motivation to engage w/ children around art",none,parent_outcome_knowledge,1,,,,,both
+outcomes,Parents have a changed perception of museum as a place for them and their family,none,parent_outcome_perception,1,,,,,both
+relationships,Families,current audience + underserved families,families,,1,,,,both
+outcomes,Families have social interaction - especially w/ different groups,none,families_outcome_social,,1,,,,both
+outcomes,"Families have a sense of joy and delight, esp. w/in family -- enhanced sense of well-being",none,families_outcome_joy,,1,,,,both
+outcomes,"Children more school ready - academic, social, emotional, behavior skills",none,families_outcome_kready,,1,,,,both
+relationships,Preschools,none,preschools,,,1,,,both
+outcomes,Preschools increase opportunity to expose kids to developmentally appropriate arts experiences,none,preschools_outcome_exposearts,,,1,,,both
+relationships,Artists & Early Childhood Professionals,none,artists_eciprofs,,,,1,,IMLS
+outcomes,Artists and Early Childhood Professionals think in new ways,none,artists_eciprofs_outcome_newways,,,,1,,IMLS
+relationships,Museums,none,museums,,,,,1,both
+outcomes,Contributing to best practices in early learning in museums,none,museums_bestpractices,,,,,1,both
+barriers,"Lack of training, awareness around building new audiences",none,barriers_staff_training,,1,,,1,both
+barriers,Space/routine/assets around welcoming families,none,barriers_welcome_families,,1,,,,both
+barriers,Do not look family friendly,none,barriers_look_family_friendly,,1,,,,both
+barriers,Knowledge of how to deal with multi-age families when focusing on preK,none,barriers_staff_knowledge,,1,,,1,both
+barriers,Lack of multi-lingual staff and signage,none,barriers_mulilin_staff,1,1,,,,both
+barriers,Parking fee,none,barriers_parking,,1,,,,both
+barriers,Access to reliable transportation for families,none,barriers_reliable_transport,,1,,,,both
+barriers,Admission cost,none,barriers_economic,,1,,,,both
+barriers,Lack of  leisure time,none,barriers_lack_leisure,,1,,,,both
+barriers,Schedules of working parents,none,barriers_time,1,1,,,,both
+barriers,Museum as exclusive/elite,none,barriers_cultural_personal,1,,,,,both
+barriers,Museum not for children,none,barriers_museum_not_children,1,,,,,both
+barriers,Arts experiences not important to school readiness -- no value,none,barriers_art_not_important,1,,,,,both
+barriers,Arts experiences not appealing/interesting,none,barriers_art_not_interesting,1,1,,,,both
+barriers,"Differing approaches to parenting  (value systems related  to discipline, obedience, exploration, discovery)",none,barriers_different_parenting,1,,,,,both
+assets,Current family programs,"Wee Wednesday
+Artful Total
+Baby Loves Art",assets_current_programs,1,1,,,,both
+assets,Current family resources,"Story Trail I
+Tips for Tots
+Art Packs",assets_current_fam_resources,1,1,,,,both
+assets,Current preschool resources,A is for Art,assets_current_prek_resources,,,1,,,both
+assets,Crocker preK Education staff,none,assets_staff,1,1,1,,1,both
+assets,Art of Parenting,none,assets_artparenting,1,,,,,both
+assets,Growing relationships with community artists,none,assets_rel_w_artists,,,,1,,both
+assets,Funding for preK and underserved community outreach,"First 5
+IMLS
+Irvine (Block by Block)",assets_funding,1,1,1,1,1,both
+activities,Create parenting resources,"Expand Art of Parenting
+Refresh Art Packs
+Translate Tips for Tots into Spanish",activities_parenting_resources,1,,,,,First5
+activities,Reduce time barriers,Add weekend preK programs,activities_reduce_time_barriers,,1,,,,First5
+activities,Reduce economic barriers to visiting the museum,Distribute museum passes in underserved areas,activities_reduce_economic_barriers,,1,,,,both
+activities,Create Art Spots,Interactive artist-designed exhibits,activities_preK_exhibits,,,1,,,IMLS
+activities,Improve Story Trail,"Create Story Trail II
+Translate Story Trail I Spanish",activities_storytrail,,,1,,,First5
+activities,"Continuous improvements on BLA, Artful Tot, WW",none,activities_preK_program_improvements,1,1,,,,First5
+activities,Add live artist or performing art component to current programs,none,activities_preK_liveartist,,1,,1,,IMLS
+activities,Concierge,"Training, concierge table
+Amenities for families",activities_concierge,1,1,,,,both
+activities,Preschool outreach,none,activities_preKoutreach,,,1,,,First5
+activities,A is for Art,none,activities_aforart,,,1,,,First5
+activities,"Deep collaboration b/w artists, museum staff, and early childhood professionals",none,activities_collaboration,,,1,1,,IMLS
+activities,Learning/best practices,"Write/present best practices
+Long-term impact evaluation",activities_learn_bp,,,,,1,both

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Crocker ECi Logic Model</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class = "col-md-9">
+                <h1><font color = #f5f5f5>Crocker ECi Logic Model</font></h1>
+            </div>
+
+                <ul class="nav navbar-nav">
+                    <li class = "col-md-5">
+                        <div id="detail-view" class="button-text">
+                            <div class="button-text">View Details</div>
+                        </div>        
+                    </li>
+                    <li class = "col-md-5">
+                        <div id="summary" class="button-text">
+                            <div class="button-text">Honeycomb</div>
+                        </div>        
+                    </li>
+                </ul>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        
+        
+        <!-- Sort/Filter buttons -->
+        <div class="row" id="col-relationships">
+            <h2>Relationships</h2>
+            <div class="col-md-4 col-xs-3" id='relationship-button-template'>
+<!--				<div class="image-box">-->
+				    <div class="btn btn-default btn-block relationship-button">
+                        <div class="element-name"></div>
+                        <div class="relationship-details"></div>
+                    </div>
+
+<!--				</div>-->
+            </div>
+        </div>
+        
+        <!-- /.row -->
+
+       
+        <!-- Call to Action Well -->
+<!--
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="well text-center">
+                        <div class="filters text-center">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#" data-filter="*">All</a></li>
+                                <li><a href="#" data-filter=".staff-training">Staff Training</a></li>
+                                <li><a href="#" data-filter=".data-crunching">Data Crunching</a></li>
+                                <li><a href="#" data-filter=".evaluation">Evaluation</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+-->
+
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            
+            <div class="col-md-3 col-xs-3" id="col-barriers">
+                <h2>Barriers/Needs</h2>
+                <p>what is preventing our outcomes</p>
+                <div id="element-box-template" class="well element-boxes">
+                    <div class="element-name"></div>
+                    <div class="element-details"></div>
+                </div>
+            </div>
+            <!-- /.col-md-4 -->
+
+            
+            <div class="col-md-3 col-xs-3" id="col-resources">
+                <h2>Assets</h2>
+                <p>of the Crocker and audience</p>
+
+            </div>
+            <!-- /.col-md-4 -->
+            
+            <div class="col-md-3 col-xs-3" id="col-activities">
+                <h2>Activities</h2>
+                <p>what we do or hope to do</p>
+            </div>
+            <!-- /.col-md-4 -->
+            
+
+            <div class="col-md-3 col-xs-3" id="col-outcomes">
+                <h2>Outcomes</h2>
+                <p>how people change</p>
+            </div>
+
+            <!-- /.col-md-4 -->
+        </div>
+        
+        <!-- /.row -->
+
+        <div class="row" id="summary-section">
+            <img src="img/honeycomb.jpg">
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Erin Gong 2016</p>
+                </div>
+            </div>
+        </footer>
+        
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Initialization of Plugins -->
+<!--    <script type="text/javascript" src="js/template.js"></script>-->
+
+    <script src="js/lm_data.js"></script>
+
+    <script src="js/node_lists.js"></script>
+
+    <script>
+
+        function render_boxes(lm_element,col_id){
+
+            $m = $(col_id);
+            $e = $('#element-box-template');
+            
+            for( i in lm_element ){
+                console.log(lm_element[i]);
+                var single_element = lm_element[i];
+                
+                $new_element = $e.clone();
+                $(".element-name", $new_element).html(single_element.text)
+                if (single_element.expanded_text == 'none') {
+                    $(".element-details", $new_element).html("")    
+                } else {
+                    $(".element-details", $new_element).html(single_element.expanded_text)    
+                }
+                
+                if (single_element.grant_type == 'IMLS'){
+                    $(".element-name", $new_element).css('color','#3D85C6')
+                }
+                
+                if (single_element.grant_type == 'First5'){
+                    $(".element-name", $new_element).css('color','#49BCAB')
+                }
+                
+                $new_element.attr("id", "node-div-"+i)
+
+                                
+                $new_element.fadeIn();
+                $m.append($new_element);
+                
+                $new_element.click(function(){
+                    $('.element-details',this).toggle("slide");
+                });
+                
+            }
+        }
+
+        function render_relationships(lm_element,col_id){
+
+            $m = $(col_id);
+            $e = $('#relationship-button-template');
+            
+            for( i in lm_element ){
+                var single_element = lm_element[i];
+                
+                $new_element = $e.clone();
+                $(".element-name", $new_element).html(single_element.text)
+                if (single_element.expanded_text == 'none') {
+                    $(".relationship-details", $new_element).html("")    
+                } else {
+                    $(".relationship-details", $new_element).html(single_element.expanded_text)    
+                }
+                
+                $new_element.attr("id", "node-div-"+i)
+
+                                
+                $new_element.fadeIn();
+                $m.append($new_element);
+                
+                $new_element.click(function(){
+                    $('.relationship-details',this).toggle("slide");
+                });
+                
+            }
+        }
+        
+
+        $(document).ready(function(){
+            $('.element-details').hide();
+            $('.relationship-details').hide();
+            $('#summary-section').hide();
+
+            $("#detail-view").click(function(){
+                $('.element-details').toggle("slide"); 
+                $(this).html($(this).html() == "Hide Details" ? "View Details" : "Hide Details");
+
+
+            });
+
+            $("#summary").click(function(){
+                $('#col-resources').toggle("slide"); 
+                $('#col-relationships').toggle("slide"); 
+                $('#col-activities').toggle("slide"); 
+                $('#col-barriers').toggle("slide"); 
+                $('#col-outcomes').toggle("slide"); 
+                $('#summary-section').toggle();                
+                $(this).html($(this).html() == "Logic Model" ? "Honeycomb" : "Logic Model");
+            });
+
+            render_relationships(relationships,"#col-relationships");
+            
+            render_boxes(assets,"#col-resources");
+            render_boxes(activities,"#col-activities");
+            render_boxes(barriers,"#col-barriers");
+            render_boxes(outcomes,"#col-outcomes");
+            
+            
+            $("#node-div-families").click(function(){
+                for( n in node_list_connect_families ){
+                    $(node_list_connect_families[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-parents").click(function(){
+                for( n in node_list_connect_parents ){
+                    $(node_list_connect_parents[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-preschools").click(function(){
+                for( n in node_list_connect_preschools ){
+                    $(node_list_connect_preschools[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-museums").click(function(){
+                for( n in node_list_connect_museums ){
+                    $(node_list_connect_museums[n]).toggle("slide");
+                };
+            });
+
+            $("#node-div-artists_eciprofs").click(function(){
+                for( n in node_list_connect_artists_eciprofs ){
+                    $(node_list_connect_artists_eciprofs[n]).toggle("slide");
+                };
+            });
+            
+        });
+
+    </script>
+
+</body>
+
+</html>
