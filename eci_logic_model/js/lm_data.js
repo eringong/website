@@ -1,6 +1,6 @@
 relationships = {
   "artists_eciprofs": {
-    "text": "Artists & Early Childhood Professionals", 
+    "text": "Artists & Early Childhood Professionals (IMLS)", 
     "lm_type": "relationships", 
     "expanded_text": "none", 
     "grant_type": "IMLS"
@@ -51,7 +51,7 @@ outcomes = {
     "grant_type": "both"
   }, 
   "artists_eciprofs_outcome_newways": {
-    "text": "Artists and Early Childhood Professionals think in new ways", 
+    "text": "Artists and Early Childhood Professionals think in new ways (IMLS)", 
     "lm_type": "outcomes", 
     "expanded_text": "none", 
     "grant_type": "IMLS"
@@ -222,13 +222,13 @@ assets = {
 
 activities = {
   "activities_preK_program_improvements": {
-    "text": "Continuous improvements on BLA, Artful Tot, WW", 
+    "text": "Continuous improvements on BLA, Artful Tot, WW (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "none", 
     "grant_type": "First5"
   }, 
   "activities_storytrail": {
-    "text": "Improve Story Trail", 
+    "text": "Improve Story Trail (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "Create Story Trail II<br>Translate Story Trail I Spanish", 
     "grant_type": "First5"
@@ -240,25 +240,25 @@ activities = {
     "grant_type": "both"
   }, 
   "activities_preK_exhibits": {
-    "text": "Create Art Spots", 
+    "text": "Create Art Spots (IMLS)", 
     "lm_type": "activities", 
     "expanded_text": "Interactive artist-designed exhibits", 
     "grant_type": "IMLS"
   }, 
   "activities_collaboration": {
-    "text": "Deep collaboration b/w artists, museum staff, and early childhood professionals", 
+    "text": "Deep collaboration b/w artists, museum staff, and early childhood professionals (IMLS)", 
     "lm_type": "activities", 
     "expanded_text": "none", 
     "grant_type": "IMLS"
   }, 
   "activities_aforart": {
-    "text": "A is for Art", 
+    "text": "A is for Art (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "none", 
     "grant_type": "First5"
   }, 
   "activities_parenting_resources": {
-    "text": "Create parenting resources", 
+    "text": "Create parenting resources (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "Expand Art of Parenting<br>Refresh Art Packs<br>Translate Tips for Tots into Spanish", 
     "grant_type": "First5"
@@ -270,7 +270,7 @@ activities = {
     "grant_type": "both"
   }, 
   "activities_reduce_time_barriers": {
-    "text": "Reduce time barriers", 
+    "text": "Reduce time barriers (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "Add weekend preK programs", 
     "grant_type": "First5"
@@ -282,13 +282,13 @@ activities = {
     "grant_type": "both"
   }, 
   "activities_preK_liveartist": {
-    "text": "Add live artist or performing art component to current programs", 
+    "text": "Add live artist or performing art component to current programs (IMLS)", 
     "lm_type": "activities", 
     "expanded_text": "none", 
     "grant_type": "IMLS"
   }, 
   "activities_preKoutreach": {
-    "text": "Preschool outreach", 
+    "text": "Preschool outreach (FIRST 5)", 
     "lm_type": "activities", 
     "expanded_text": "none", 
     "grant_type": "First5"

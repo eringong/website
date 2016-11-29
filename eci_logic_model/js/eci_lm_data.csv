@@ -8,8 +8,8 @@ outcomes,"Families have a sense of joy and delight, esp. w/in family -- enhanced
 outcomes,"Children more school ready - academic, social, emotional, behavior skills",none,families_outcome_kready,,1,,,,both
 relationships,Preschools,none,preschools,,,1,,,both
 outcomes,Preschools increase opportunity to expose kids to developmentally appropriate arts experiences,none,preschools_outcome_exposearts,,,1,,,both
-relationships,Artists & Early Childhood Professionals,none,artists_eciprofs,,,,1,,IMLS
-outcomes,Artists and Early Childhood Professionals think in new ways,none,artists_eciprofs_outcome_newways,,,,1,,IMLS
+relationships,Artists & Early Childhood Professionals (IMLS),none,artists_eciprofs,,,,1,,IMLS
+outcomes,Artists and Early Childhood Professionals think in new ways (IMLS),none,artists_eciprofs_outcome_newways,,,,1,,IMLS
 relationships,Museums,none,museums,,,,,1,both
 outcomes,Contributing to best practices in early learning in museums,none,museums_bestpractices,,,,,1,both
 barriers,"Lack of training, awareness around building new audiences",none,barriers_staff_training,,1,,,1,both
@@ -40,20 +40,20 @@ assets,Growing relationships with community artists,none,assets_rel_w_artists,,,
 assets,Funding for preK and underserved community outreach,"First 5
 IMLS
 Irvine (Block by Block)",assets_funding,1,1,1,1,1,both
-activities,Create parenting resources,"Expand Art of Parenting
+activities,Create parenting resources (FIRST 5),"Expand Art of Parenting
 Refresh Art Packs
 Translate Tips for Tots into Spanish",activities_parenting_resources,1,,,,,First5
-activities,Reduce time barriers,Add weekend preK programs,activities_reduce_time_barriers,,1,,,,First5
+activities,Reduce time barriers (FIRST 5),Add weekend preK programs,activities_reduce_time_barriers,,1,,,,First5
 activities,Reduce economic barriers to visiting the museum,Distribute museum passes in underserved areas,activities_reduce_economic_barriers,,1,,,,both
-activities,Create Art Spots,Interactive artist-designed exhibits,activities_preK_exhibits,,,1,,,IMLS
-activities,Improve Story Trail,"Create Story Trail II
+activities,Create Art Spots (IMLS),Interactive artist-designed exhibits,activities_preK_exhibits,,,1,,,IMLS
+activities,Improve Story Trail (FIRST 5),"Create Story Trail II
 Translate Story Trail I Spanish",activities_storytrail,,,1,,,First5
-activities,"Continuous improvements on BLA, Artful Tot, WW",none,activities_preK_program_improvements,1,1,,,,First5
-activities,Add live artist or performing art component to current programs,none,activities_preK_liveartist,,1,,1,,IMLS
+activities,"Continuous improvements on BLA, Artful Tot, WW (FIRST 5)",none,activities_preK_program_improvements,1,1,,,,First5
+activities,Add live artist or performing art component to current programs (IMLS),none,activities_preK_liveartist,,1,,1,,IMLS
 activities,Concierge,"Training, concierge table
 Amenities for families",activities_concierge,1,1,,,,both
-activities,Preschool outreach,none,activities_preKoutreach,,,1,,,First5
-activities,A is for Art,none,activities_aforart,,,1,,,First5
-activities,"Deep collaboration b/w artists, museum staff, and early childhood professionals",none,activities_collaboration,,,1,1,,IMLS
+activities,Preschool outreach (FIRST 5),none,activities_preKoutreach,,,1,,,First5
+activities,A is for Art (FIRST 5),none,activities_aforart,,,1,,,First5
+activities,"Deep collaboration b/w artists, museum staff, and early childhood professionals (IMLS)",none,activities_collaboration,,,1,1,,IMLS
 activities,Learning/best practices,"Write/present best practices
 Long-term impact evaluation",activities_learn_bp,,,,,1,both
